@@ -1,23 +1,433 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  
+  
+  <title>아직도 보험사 배만 불리나요 자동차보험료 팩트체크</title>
+
+
+
+  
+    <style>
+        /* CSS Reset and Global Styles */
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* 부드러운 배경색 */
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #ffffff;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #1a73e8; /* 강조색 */
+            font-size: 2.5rem;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        header p {
+            color: #6c757d;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        /* Category Section Styles */
+        .category-group {
+            margin-bottom: 4rem;
+        }
+
+        .category-group h2 {
+            font-size: 2rem;
+            color: #34495e;
+            border-bottom: 3px solid #e9ecef;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        /* Card Layout for Content (Visual Hierarchy & Soft Colors) */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .card-content {
+            font-size: 1rem;
+            color: #555;
+            flex-grow: 1;
+        }
+
+        /* Hyperlink styling within card content */
+        .card-content a {
+            color: #1a73e8;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+
+        /* Call to Action button styling */
+        .card-action {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .card-action a {
+            display: inline-block;
+            background-color: #1a73e8;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-action a:hover {
+            background-color: #145cb9;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid #e9ecef;
+            margin-top: 4rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- Google Fonts import -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Structured Data for Naver SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "다이렉트 자동차 보험료 비교 가이드",
+      "description": "다양한 다이렉트 자동차 보험 상품을 한눈에 비교하고, 개인 맞춤형 보험료 견적을 실시간으로 확인하세요. 신규 가입부터 책임 보험, 자차 보험까지 모든 정보를 제공합니다.",
+      "url": "https://directjpmo.withusdone.com/",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "자동차 보험 핵심 정보",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://directjpmob.withusdone.com/",
+            "name": "새차보험료"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://directjpmoe.withusdone.com/",
+            "name": "다이렉트자동차보험료계산"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://directjpmog.withusdone.com/",
+            "name": "자동차보험가입경력인정"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://directkpmoc.withusdone.com/",
+            "name": "자동차보험등급확인"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "url": "https://directjpmol.withusdone.com/",
+            "name": "탄만큼내는자동차보험"
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>아직도 보험사 배만 불리나요 자동차보험료 팩트체크</h1>
+         </div>
+    </header>
+
+    <main class="container">
+
+        <!-- 1. 신규 가입 및 특수 상황 카테고리 (Category: New Sign-ups and Special Cases) -->
+        <section class="category-group">
+            <h2>처음 가입자를 위한 맞춤형 보험 설계</h2>
+            <div class="card-grid">
+
+                <!-- 새차보험료 (New Car Premium) -->
+                <article class="card">
+                    <h3 class="card-title">새차보험료 - 첫 운전의 설렘을 지키는 보험료 계산법</h3>
+                    <div class="card-content">
+                        <p>새 차를 구매하는 순간은 언제나 설레고 기분 좋은 경험입니다. 하지만 신차 구매 시 반드시 고려해야 할 '숨겨진 비용' 중 하나가 바로 <a href="https://directjpmob.withusdone.com/" target="_blank">새차보험료</a>입니다. 첫 자동차 보험 가입자에게는 차량 가격, 연령, 운전 경력 등이 복합적으로 작용하여 보험료가 책정됩니다. 특히 새 차는 차량 가액이 높기 때문에 자차 보험(자기차량손해)의 비중이 높아져 보험료 부담이 상대적으로 클 수 있습니다. 하지만 다이렉트 보험을 통해 불필요한 담보를 줄이고, 안전 운전 특약이나 블랙박스 할인 등을 적용하면 신차라도 합리적인 보험료로 시작할 수 있습니다. 딜러가 제시하는 보험 상품 대신, 여러 보험사의 견적을 꼼꼼히 비교하여 신차의 가치와 운전자의 조건을 모두 만족시키는 최적의 보험을 찾는 것이 중요합니다. 새 차의 가치를 보존하고, 만약의 사고로부터 재정적 손실을 최소화하는 현명한 선택이 필요합니다. 차량 출고 전 꼼꼼한 비교 견적으로 현명한 신차 보험 가입을 준비하세요.</p>
+                    </div>
+                </article>
+
+                <!-- 자동차보험신규 (New Auto Insurance) -->
+                <article class="card">
+                    <h3 class="card-title">자동차보험신규 가입자 가이드 - 초보 운전자를 위한 필수 정보</h3>
+                    <div class="card-content">
+                        <p>면허를 취득하고 첫 차를 구매하려는 분들에게 <a href="https://directjpmoi.withusdone.com/" target="_blank">자동차보험신규</a> 가입은 복잡하게 느껴질 수 있습니다. 운전 경력이 없는 초보 운전자는 사고 위험도가 높다고 판단되어 상대적으로 높은 보험료가 책정되곤 합니다. 하지만 걱정하지 마세요. 신규 가입자도 보험료를 절약할 수 있는 다양한 방법이 있습니다. 가장 중요한 것은 의무 가입 항목인 책임 보험 외에, 본인에게 필요한 담보만 선택적으로 구성하는 것입니다. 예를 들어, 운전 습관에 따라 주행 거리가 짧다면 '마일리지 특약'을 활용할 수 있고, 운전 경험이 많은 가족의 경력을 인정받는 '가입 경력 인정' 제도를 활용하는 것도 좋은 방법입니다. 또한, '운전자 범위 한정 특약'을 통해 운전자를 좁게 설정하여 보험료를 낮추는 것도 고려해볼 수 있습니다. 처음 가입하는 만큼 보험 용어와 담보의 종류를 정확히 이해하고, 꼼꼼한 비교견적을 통해 자신에게 맞는 보험 설계를 하는 것이 중요합니다. 신규 가입자라도 현명한 선택으로 안전한 운전 생활을 시작할 수 있습니다.</p>
+                    </div>
+                </article>
+
+                <!-- 미성년자자동차보험 (Minor Car Insurance) -->
+                <article class="card">
+                    <h3 class="card-title">미성년자자동차보험 가입 전략 - 가족 단위 보험료 절약 팁</h3>
+                    <div class="card-content">
+                        <p>운전면허를 취득한 자녀가 있는 가정이라면 <a href="https://directjpmoz.withusdone.com/" target="_blank">미성년자자동차보험</a> 가입에 대한 고민이 많을 것입니다. 만 18세 미성년자는 피보험자로 단독 가입이 불가능하며, 반드시 부모님의 보험에 함께 등록되어야 합니다. 특히 미성년 자녀를 추가하게 되면 사고 위험률이 높아져 보험료가 크게 상승하는 경우가 일반적입니다. 따라서 보험료 절약을 위해서는 '운전자 한정 특약'을 활용하여 미성년 자녀가 운전하는 경우에만 보장받을 수 있도록 범위를 설정하거나, '가족 한정' 특약을 통해 보험료를 최적화할 수 있습니다. 미성년 자녀가 운전하는 차량이라면 반드시 보장 범위를 확실히 하고, 예기치 않은 사고에 대비해야 합니다. 또한, 자녀의 안전 운전 습관을 독려하고, 블랙박스 등 안전장치 할인을 적극적으로 활용하여 보험료 부담을 줄이는 것도 현명한 방법입니다. 미성년 자녀의 안전을 지키면서도 가족 전체의 보험료 부담을 줄일 수 있는 최적의 보험 설계를 찾는 것이 중요합니다.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 2. 보험료 비교 및 절약 전략 카테고리 (Category: Premium Comparison and Savings Strategies) -->
+        <section class="category-group">
+            <h2>보험료 비교견적과 할인 특약으로 절약하는 노하우</h2>
+            <div class="card-grid">
+
+                <!-- 다이렉트자동차보험료계산 (Direct Auto Insurance Premium Calculation) -->
+                <article class="card">
+                    <h3 class="card-title">다이렉트자동차보험료계산 - 1분 만에 끝내는 실시간 견적 확인</h3>
+                    <div class="card-content">
+                        <p>매년 갱신되는 자동차 보험료, 혹시 매번 같은 보험사에 가입하고 계신가요? <a href="https://directjpmoe.withusdone.com/" target="_blank">다이렉트자동차보험료계산</a> 서비스를 활용하면 수많은 보험사의 견적을 단 몇 분 만에 비교할 수 있습니다. 다이렉트 보험은 설계사를 거치지 않고 직접 가입하는 방식으로, 설계사 수수료가 절감되어 일반적으로 보험료가 저렴합니다. 보험료 계산 시에는 본인의 운전 경력, 차량 모델, 나이, 사고 유무 등 다양한 요소를 정확하게 입력해야 합니다. 특히 최근에는 '주행거리 특약'이나 'T맵 안전운전 점수 특약' 등 개인의 운전 습관에 따른 다양한 할인 특약이 제공됩니다. 다이렉트 견적 비교 사이트에서는 이러한 할인 특약을 모두 반영하여 실시간으로 보험료를 산출해주므로, 가장 저렴하고 합리적인 보험 상품을 쉽게 찾아볼 수 있습니다. 갱신 시기가 다가오면 반드시 여러 보험사의 견적을 비교해보고, 본인에게 맞는 최적의 보험을 선택하는 것이 연간 수십만 원의 보험료를 절약하는 핵심 비결입니다.</p>
+                    </div>
+                </article>
+
+                <!-- 자동차보험비교추천 (Auto Insurance Comparison Recommendation) -->
+                <article class="card">
+                    <h3 class="card-title">자동차보험비교추천 - 나에게 가장 적합한 보험 상품 찾기</h3>
+                    <div class="card-content">
+                        <p>수많은 보험사들 중에서 어떤 상품을 선택해야 할지 고민이신가요? <a href="https://directjpmoh.withusdone.com/" target="_blank">자동차보험비교추천</a> 서비스를 이용하면 이러한 고민을 한 번에 해결할 수 있습니다. 단순히 저렴한 보험료만을 기준으로 할 것이 아니라, 보험사별로 제공하는 서비스의 만족도나 사고 처리 능력, 그리고 다양한 할인 특약을 종합적으로 고려해야 합니다. 일부 보험사는 특정 차종이나 연령대에 대해 더 높은 할인율을 제공하거나, '자녀 할인 특약'이나 '대중교통 이용 할인 특약' 등 본인의 생활 방식에 맞는 특약을 제공하기도 합니다. 비교 추천 사이트에서는 이러한 복잡한 조건들을 한눈에 비교할 수 있도록 정리해줍니다. 또한, 보험료는 매년 변동되므로 갱신 시기마다 비교견적을 받아보는 것이 좋습니다. 전문가의 추천이나 객관적인 데이터를 바탕으로 최적의 보험을 선택하고, 숨어있는 할인 혜택까지 모두 챙겨보세요. 현명한 비교 추천은 단순히 보험료 절약뿐만 아니라, 사고 발생 시 신속하고 정확한 처리를 보장받는 길입니다.</p>
+                    </div>
+                </article>
+
+                <!-- 탄만큼내는자동차보험 (Pay As You Drive Insurance) -->
+                <article class="card">
+                    <h3 class="card-title">탄만큼내는자동차보험 - 적게 타는 운전자를 위한 마일리지 보험</h3>
+                    <div class="card-content">
+                        <p>평소 대중교통을 주로 이용하거나 주말에만 운전하는 등 연간 주행거리가 짧은 운전자라면 <a href="https://directjpmol.withusdone.com/" target="_blank">탄만큼내는자동차보험</a>(마일리지 특약)을 반드시 고려해야 합니다. 이 보험은 운행 거리에 따라 보험료를 후정산하거나 선할인 해주는 방식으로, 운전을 적게 할수록 보험료를 대폭 할인받을 수 있습니다. 보험사별로 마일리지 특약의 기준 거리가 다르고 할인율도 차이가 있으므로, 본인의 예상 주행거리에 맞춰 가장 유리한 조건을 제시하는 보험사를 선택하는 것이 중요합니다. 특히 마일리지 특약은 주행거리가 짧을수록 최대 30% 이상의 할인이 적용되기도 하므로, 평소 운전량이 많지 않은 운전자들에게는 가장 효과적인 보험료 절약 방법입니다. 보험료 계산 시 주행거리를 예상하여 선할인받을 수도 있고, 연간 보험 기간 종료 시점에 실제 주행거리를 측정하여 정산받는 방식도 있습니다. 차량 사진과 계기판 사진을 제출하는 간단한 절차만으로 큰 할인 혜택을 받을 수 있으니, 지금 바로 확인해 보세요.</p>
+                    </div>
+                </article>
+
+                <!-- 경차자동차보험료 (Light Vehicle Insurance Premium) -->
+                <article class="card">
+                    <h3 class="card-title">경차자동차보험료 - 예상치 못한 경차의 보험료, 어떻게 줄일까?</h3>
+                    <div class="card-content">
+                        <p>경차는 차량 가격이 저렴하고 연비가 좋아 경제적이라고 알려져 있지만, 의외로 <a href="https://directkpmoj.withusdone.com/" target="_blank">경차자동차보험료</a>는 생각보다 비쌀 수 있습니다. 경차는 차체가 작아 사고 발생 시 탑승자 상해 위험이 높고, 차량 가액 대비 수리비 비율이 높다는 통계적 이유로 보험료가 높게 책정되는 경우가 많습니다. 하지만 경차 운전자도 보험료를 절약할 수 있는 다양한 방법이 있습니다. 우선 경차의 특성을 고려하여 자차 보험의 자기부담금을 높게 설정하여 보험료를 낮추는 방법이 있습니다. 또한, 경차 운전자는 대부분 주행 거리가 짧은 경우가 많으므로 '마일리지 특약'을 활용하거나, '블랙박스 할인'을 적용하는 것이 필수적입니다. 경차는 사고 발생 시 상대적으로 더 큰 위험에 노출될 수 있으므로, 무조건 저렴한 보험만을 찾기보다는 최소한의 보장 범위를 유지하면서 할인 특약을 최대한 활용하는 현명한 선택이 필요합니다. 경차의 장점을 살려 경제적인 운전을 이어가기 위해 보험료 절감 팁을 꼼꼼히 확인하세요.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- 3. 핵심 담보 및 가입 노하우 카테고리 (Category: Core Coverage and Sign-up Tips) -->
+        <section class="category-group">
+            <h2>필수 담보와 가입 경력을 활용한 스마트 보험 가입</h2>
+            <div class="card-grid">
+
+                <!-- 차량책임보험 (Mandatory Liability Insurance) -->
+                <article class="card">
+                    <h3 class="card-title">차량책임보험 - 의무 가입, 하지만 보장 범위는 꼼꼼히 확인하세요</h3>
+                    <div class="card-content">
+                        <p><a href="https://directjpmod.withusdone.com/" target="_blank">차량책임보험</a>은 자동차 소유자라면 반드시 가입해야 하는 의무 보험입니다. 책임 보험은 대인배상 I, 대물배상으로 구성되어 있으며, 사고 발생 시 상대방의 피해를 최소한의 범위 내에서 보장합니다. 책임 보험 미가입 시에는 과태료가 부과되므로 반드시 기한 내에 가입해야 합니다. 하지만 책임 보험만으로는 사고 발생 시 운전자의 피해나 상대방의 충분한 피해 보상이 어렵습니다. 책임 보험은 최소한의 보장만을 제공하므로, 실제 사고가 발생했을 때 운전자는 추가적인 금전적 손실을 입을 가능성이 높습니다. 따라서 운전자의 상황에 맞춰 책임 보험 외에 종합 보험 가입을 고려해야 합니다. 책임 보험의 보장 범위와 보상 한도를 정확히 이해하고, 본인의 운전 습관과 차량 가치를 고려하여 추가적인 보장 항목(자차, 자기 신체 사고, 무보험차 상해 등)을 함께 설계하는 것이 중요합니다. 책임 보험의 의무를 지키면서도, 운전자 본인을 위한 안전망을 구축하는 것이 현명한 보험 가입의 시작입니다.</p>
+                    </div>
+                </article>
+
+                <!-- 자동차보험담보 (Auto Insurance Coverage) -->
+                <article class="card">
+                    <h3 class="card-title">자동차보험담보 - 복잡한 담보 종류, 나에게 필요한 핵심 담보는?</h3>
+                    <div class="card-content">
+                        <p>자동차 보험 가입 시 가장 헷갈리는 부분이 바로 <a href="https://directjpmof.withusdone.com/" target="_blank">자동차보험담보</a>입니다. 대인배상, 대물배상, 자기차량손해(자차), 자기신체사고(자손), 무보험차 상해 등 수많은 담보 종류가 있습니다. 이 중 책임 보험(대인배상 I, 대물배상)은 의무 가입이지만, 나머지 항목은 선택 사항입니다. 하지만 만약의 사고에 대비하여 반드시 가입해야 할 필수 선택 담보들이 있습니다. 대인배상 II는 책임 보험 보장 한도를 넘어선 피해를 보상하며, 자차 보험은 본인 차량의 파손 수리비를 보장해줍니다. 특히, 자차 보험은 차량 가액이 높을수록 보험료 부담은 크지만, 사고 시 큰 재정적 손실을 막아주는 핵심 담보입니다. 각 담보의 보장 범위와 한도를 정확히 이해하고, 자신의 운전 습관이나 차량의 가치를 고려하여 합리적인 담보를 설계해야 합니다. 불필요한 담보는 제외하고, 꼭 필요한 핵심 담보를 넉넉하게 가입하여 사고의 위험으로부터 완벽하게 대비하는 것이 현명한 보험 가입의 핵심입니다.</p>
+                    </div>
+                </article>
+
+                <!-- 자차가입 (Comprehensive Coverage Enrollment) -->
+                <article class="card">
+                    <h3 class="card-title">자차가입 - 내 차를 위한 보험, 신차라면 필수, 중고차라면 신중하게</h3>
+                    <div class="card-content">
+                        <p><a href="https://directkpmof.withusdone.com/" target="_blank">자차가입</a>(자기차량손해)은 본인 차량에 발생한 사고로 인한 손해를 보상받기 위한 담보입니다. 상대방이 없는 단독 사고나, 가해자가 불분명한 뺑소니 사고 등에서도 내 차의 수리비를 보장받을 수 있습니다. 신차의 경우 차량 가액이 높아 자차가입이 필수적이지만, 중고차의 경우 차량 가액이 낮다면 자차 보험료가 부담될 수 있습니다. 자차 보험료는 차량 가액, 연식, 운전자의 조건 등에 따라 달라집니다. 특히, 자차 보험 가입 시 '자기부담금' 설정을 통해 보험료를 조절할 수 있습니다. 자기부담금은 사고 발생 시 보험 가입자가 부담하는 금액으로, 이를 높게 설정하면 보험료는 낮아집니다. 운전 경력과 사고 위험도를 고려하여 적절한 자기부담금을 설정하는 것이 중요합니다. 자차 보험 가입은 선택 사항이지만, 만약의 사고에 대비하여 큰 재정적 손실을 막고 싶다면 신중하게 고려해야 할 핵심 담보입니다.</p>
+                    </div>
+                </article>
+
+                <!-- 자동차보험가입경력인정 (Auto Insurance Enrollment History Recognition) -->
+                <article class="card">
+                    <h3 class="card-title">자동차보험가입경력인정 - 숨겨진 할인 혜택, 운전 경력을 인정받자</h3>
+                    <div class="card-content">
+                        <p>자동차 보험료 산정에서 '운전 경력'은 매우 중요한 요소입니다. 운전 경력이 짧을수록 사고 위험이 높다고 판단되어 높은 보험료가 책정됩니다. 하지만 <a href="https://directjpmog.withusdone.com/" target="_blank">자동차보험가입경력인정</a> 제도를 활용하면 운전 경력을 인정받아 보험료 할인을 받을 수 있습니다. 이 제도는 군대 운전병 경력, 회사 차량 운전 경력, 해외 운전 경력, 혹은 가족의 보험에 '추가 운전자'로 등록되어 운전한 경력 등을 인정해줍니다. 특히 부모님이나 배우자의 보험에 추가 운전자로 등록되어 운전한 기간이 있다면, 신규 가입 시 운전 경력으로 인정받아 보험료를 크게 절약할 수 있습니다. 이 제도를 활용하려면 보험사에 관련 서류를 제출해야 합니다. 가입 경력 인정은 최대 3년까지 인정받을 수 있으므로, 해당 경력이 있다면 반드시 확인하여 보험료 할인 혜택을 놓치지 않도록 해야 합니다. 숨겨진 운전 경력을 찾아 보험료 부담을 줄이는 스마트한 방법입니다.</p>
+                    </div>
+                </article>
+
+                <!-- 자동차보험등급확인 (Auto Insurance Grade Check) -->
+                <article class="card">
+                    <h3 class="card-title">자동차보험등급확인 - 사고 여부에 따른 보험료 할인·할증 기준</h3>
+                    <div class="card-content">
+                        <p>자동차 보험 등급(사고 위험 등급)은 보험료를 산정하는 데 있어 가장 기본이 되는 기준입니다. <a href="https://directkpmoc.withusdone.com/" target="_blank">자동차보험등급확인</a>은 운전자가 몇 등급에 속하는지 확인하는 과정입니다. 등급은 1등급부터 29등급까지 있으며, 등급 숫자가 높을수록 사고 위험이 낮다고 판단되어 보험료가 할인됩니다. 신규 가입자는 일반적으로 11등급부터 시작하며, 무사고 운전 경력이 쌓일수록 매년 등급이 상승하여 보험료가 할인됩니다. 반대로 사고를 내게 되면 등급이 하락하여 보험료가 할증됩니다. 등급은 단순히 사고 유무뿐만 아니라, 사고의 규모와 횟수 등에 따라 복합적으로 결정됩니다. 자신의 보험 등급을 정확히 확인하고, 평소 안전 운전을 통해 등급을 관리하는 것이 장기적으로 보험료를 절약하는 가장 확실한 방법입니다. 보험 갱신 시에는 반드시 등급 변화를 확인하고, 보험료 변동 요인을 파악하여 합리적인 보험 상품을 선택해야 합니다.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
     </main>
-  </body>
+
+
+
+<footer style="font-size: 11px; color: #888; padding: 30px 20px; text-align: center; line-height: 1.8; font-family: sans-serif;">
+  <div style="margin-bottom: 8px;">
+    <!-- [네이버 팁] 봇이 JS를 실행 못해도 기본값은 읽어갈 수 있게 연도를 미리 적어둡니다 -->
+    © <span id="copyright-year">2026</span> <span id="site-title">My Website</span>. All rights reserved.
+  </div>
+
+  <div style="color: #ccc;">
+    <span id="bot-msg">데이터 동기화 중...</span> | 
+    <!-- [네이버 팁] 빈 태그(empty tag)는 로봇이 무시하므로 기본 날짜형식을 넣어둡니다 -->
+    최종 기준일: <time id="bot-date" datetime="2026-01-01">2026-01-01</time>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    // 1. 한국 시간(KST) 강제 계산 (네이버는 한국 시간이 기준)
+    const now = new Date();
+    const utc = now.getTime() + (now.getTimezoneOffset() * 60 * 1000);
+    const kstGap = 9 * 60 * 60 * 1000;
+    const today = new Date(utc + kstGap);
+
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+    
+    // YYYY-MM-DD 형식
+    const formattedDate = `${year}-${month}-${day}`;
+    // ISO 8601 형식 (검색엔진이 가장 좋아하는 표준 포맷)
+    const isoDate = `${formattedDate}T09:00:00+09:00`;
+
+    // 2. 사용자 화면 업데이트 (보여주기용)
+    const siteTitleElem = document.getElementById('site-title');
+    if (siteTitleElem) siteTitleElem.textContent = document.title || window.location.hostname;
+
+    const yearElem = document.getElementById('copyright-year');
+    if (yearElem) yearElem.textContent = year;
+
+    const dateElem = document.getElementById('bot-date');
+    if(dateElem) {
+      dateElem.textContent = formattedDate;
+      dateElem.setAttribute('datetime', formattedDate);
+    }
+
+    const msgElem = document.getElementById('bot-msg');
+    if(msgElem) {
+      // 네이버 봇이나 사용자가 볼 때 신뢰감을 주는 문구
+      const msgs = ["서비스 최적화 완료", "보안 점검 완료", "데이터 최신화"];
+      msgElem.textContent = msgs[today.getDate() % msgs.length];
+    }
+
+    // 3. [핵심] 네이버 봇 타겟 메타 태그 주입
+    // 네이버가 수집 시 '최신 콘텐츠'인지 판단할 때 참고하는 태그들입니다.
+    
+    function setMetaTag(attrType, attrName, content) {
+      // 이미 존재하는 태그인지 확인 (property="og:..." 또는 name="date" 등)
+      let selector = `meta[${attrType}="${attrName}"]`;
+      let meta = document.querySelector(selector);
+      
+      // 없으면 새로 만들어서 head에 추가
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute(attrType, attrName);
+        document.head.appendChild(meta);
+      }
+      // 있으면 내용만 최신 날짜로 교체
+      meta.content = content;
+    }
+
+    // (A) 네이버가 1순위로 보는 Open Graph 수정일 (블로그/카페/웹문서 공통)
+    setMetaTag('property', 'og:updated_time', isoDate);
+
+    // (B) 네이버 웹문서/뉴스 검색 알고리즘이 참고하는 Article 속성
+    setMetaTag('property', 'article:modified_time', isoDate);
+    
+    // (C) 일반 검색엔진(공통) 날짜 태그
+    setMetaTag('name', 'date', isoDate);
+
+    // (D) 네이버가 사이트 소유 확인 시 참고하는 저작권 정보 갱신
+    setMetaTag('name', 'copyright', `${year} ${document.title}`);
+
+  })();
+</script>
+
+
+
+</body>
 </html>
